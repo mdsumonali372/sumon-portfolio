@@ -38,7 +38,7 @@ const Contact = () => {
       <SectionTitle title="Contact"></SectionTitle>
       <div className="md:flex flex-col-reverse md:flex-row justify-between items-center gap-10">
         <div className="md:w-1/2">
-          <p className="font-bold text-xl md:text-3xl">
+          <p className="font-bold text-xl md:text-3xl break-words">
             Email:
             <a
               className="text-[#050E6B] text-xl md:text-2xl"
