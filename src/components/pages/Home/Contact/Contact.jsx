@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { FaFacebook, FaGithub, FaInstagramSquare } from "react-icons/fa";
+import Swal from "sweetalert2";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 
 const Contact = () => {
@@ -27,6 +28,16 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          if(result){
+            Swal.fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Message Send Success',
+              showConfirmButton: false,
+              timer: 1500
+            })
+          }
+          form.current.reset()
         },
         (error) => {
           console.log(error.text);

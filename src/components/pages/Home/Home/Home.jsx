@@ -1,8 +1,9 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaFacebook, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+import loader from '../../../../assets/loader.gif';
 import resume from "../../../../assets/resume.pdf";
 import sumonImg from "../../../../assets/sumon1.png";
 import NavBar from "../../../Shared/NavBar/NavBar";
@@ -13,8 +14,14 @@ import Services from "../Services/Services";
 import "./Home.css";
 
 const Home = () => {
+
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init();
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   }, []);
 
   const handleGithubClick = () => {
@@ -26,8 +33,13 @@ const Home = () => {
   const handleFaInstagramClick = () => {
     window.open("https://www.instagram.com/mdsumonali372/", "_blank");
   };
+
   return (
     <>
+    {
+      loading ? <div className="flex items-center justify-center h-screen">
+        <img className="w-80" src={loader} alt="" />
+      </div>: <>
       <div className="hero-image overflow-hidden">
         <NavBar></NavBar>
         <div className="container mx-auto h-full px-5 md:px-0">
@@ -110,6 +122,8 @@ const Home = () => {
       <div className="bg-[#F6F6FD]">
         <Contact></Contact>
       </div>
+      </>
+    }
     </>
   );
 };
