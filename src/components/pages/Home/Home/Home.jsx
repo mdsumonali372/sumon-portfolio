@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { FaFacebook, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import loader from '../../../../assets/loader.gif';
-import resume from "../../../../assets/resume.pdf";
+import resume from "../../../../assets/sumon.pdf";
 import sumonImg from "../../../../assets/sumon1.png";
 import NavBar from "../../../Shared/NavBar/NavBar";
 import About from "../About/About";
