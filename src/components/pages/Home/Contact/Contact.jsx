@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <div id="contact" className="py-24 container mx-auto px-5 md:px-0">
       <SectionTitle title="Contact"></SectionTitle>
-      <div className="md:flex flex-col-reverse md:flex-row justify-between items-center gap-10">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10">
         <div className="md:w-1/2">
           <p className="font-bold text-xl md:text-3xl break-words">
             Email:
@@ -88,8 +88,8 @@ const Contact = () => {
             ></FaInstagramSquare>
           </div>
         </div>
-        <div className="md:w-1/2 mx-auto mt-10 md:mt-0">
-          <h4 className="text-center text-[#050E6B] text-2xl font-bold">
+        <div className="md:w-1/2 mx-auto mt-5 md:mt-0">
+          <h4 className="text-center text-[#050E6B] md:text-2xl font-bold mb-5 md:mb-0">
             Connect with me
           </h4>
           <form ref={form} onSubmit={sendEmail}>
