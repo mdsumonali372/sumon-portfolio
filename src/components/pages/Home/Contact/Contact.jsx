@@ -49,7 +49,7 @@ const Contact = () => {
       <SectionTitle title="Contact"></SectionTitle>
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10">
         <div className="md:w-1/2">
-          <p className="font-bold text-xl md:text-3xl break-words">
+          <p className="font-bold text-xl md:text-2xl break-words">
             Email:
             <a
               className="text-[#050E6B] text-xl md:text-2xl"
@@ -58,7 +58,7 @@ const Contact = () => {
               mdsumonali026@gmail.com
             </a>
           </p>
-          <p className="font-bold text-xl md:text-3xl my-3">
+          <p className="font-bold text-xl md:text-2xl my-3">
             Phone:
             <a
               className="text-[#050E6B] text-xl md:text-2xl"
@@ -67,7 +67,7 @@ const Contact = () => {
               8801750565256
             </a>
           </p>
-          <p className="font-bold text-xl md:text-3xl">
+          <p className="font-bold text-xl md:text-2xl">
             Address:
             <span className="text-[#050E6B] text-xl md:text-2xl">
               Natore, Bangladesh

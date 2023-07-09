@@ -77,8 +77,7 @@ const Projects = () => {
       <SectionSubTitle subTitle="Some of my personal projects"></SectionSubTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
         {projects.map((project, index) => (
-          <div key={index} data-aos="fade-up"
-          data-aos-duration="3000">
+          <div key={index} data-aos="fade-up" data-aos-duration="3000">
             <ReactCardFlip
               isFlipped={activeIndex === index}
               flipDirection="vertical"
@@ -141,7 +140,6 @@ const Projects = () => {
                 </div>
                 <div className="text-right mt-2">
                   <button className="btn" onClick={() => handleClick(index)}>
-                    {" "}
                     <FaArrowLeft></FaArrowLeft> Back
                   </button>
                 </div>
