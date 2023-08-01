@@ -3,9 +3,9 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { FaFacebook, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+import developerSumonResume from "../../../../assets/developer-sumon-resume.pdf";
 import loader from '../../../../assets/loader.gif';
-import resume from "../../../../assets/sumon.pdf";
-import sumonImg from "../../../../assets/sumon1.png";
+// import sumonImg from "../../../../assets/sumon1.png";
 import NavBar from "../../../Shared/NavBar/NavBar";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
@@ -14,8 +14,8 @@ import Services from "../Services/Services";
 import "./Home.css";
 
 const Home = () => {
-
   const [loading, setLoading] = useState(true);
+  const sumonImg = 'https://i.ibb.co/PrXFFLb/sumon1.png'
 
   useEffect(() => {
     AOS.init();
@@ -92,7 +92,7 @@ const Home = () => {
                   Get Started
                 </a>
                 <a
-                  href={resume}
+                  href={developerSumonResume}
                   download
                   className="btn bg-[#3B82F6] text-white hover:text-black ml-5"
                 >
